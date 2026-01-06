@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanooni Sahayata | Legal Support You Can Trust</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --light-yellow: #fff9db;
+      --soft-yellow: #ffec99;
+      --accent: #f1b500;
+      --dark-text: #2f2f2f;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: var(--light-yellow);
+      color: var(--dark-text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(to right, #fff3bf, #ffe066);
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+    }
+
+    header p {
+      max-width: 750px;
+      margin: 15px auto;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 30px;
+      background-color: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #d39e00;
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 2.3rem;
+      margin-bottom: 10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 22px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 18px;
+    }
+
+    .contact {
+      background-color: #fff3bf;
+      border-radius: 25px;
+      padding: 45px;
+      text-align: center;
+    }
+
+    .contact p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #ffe066;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Kanooni Sahayata</h1>
+    <p>Reliable legal guidance and representation to protect your rights with honesty, clarity, and compassion.</p>
+    <a href="#contact" class="btn">Free Legal Consultation</a>
+  </header>
+
+  <!-- PRACTICE AREAS -->
+  <section>
+    <div class="section-title">
+      <h2>Our Legal Services</h2>
+      <p>Comprehensive legal support across multiple practice areas</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9" alt="Courtroom">
+        <div class="card-content">
+          <h3>Civil & Criminal Law</h3>
+          <p>Strong representation and legal strategy in civil and criminal matters.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Legal Consultation">
+        <div class="card-content">
+          <h3>Legal Consultation</h3>
+          <p>Clear, honest advice to help you understand your legal options.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1593115057322-e94b77572f20" alt="Family Law">
+        <div class="card-content">
+          <h3>Family & Property Law</h3>
+          <p>Handling family disputes, property matters, and legal documentation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section>
+    <div class="section-title">
+      <h2>About Kanooni Sahayata</h2>
+    </div>
+
+    <div class="about">
+      <div>
+        <p>
+          Kanooni Sahayata is a dedicated law firm committed to providing
+          accessible, ethical, and effective legal services across India.
+          We believe that everyone deserves proper legal guidance.
+        </p>
+        <p>
+          Our experienced legal professionals focus on client trust,
+          transparency, and practical solutions tailored to each case.
+        </p>
+      </div>
+
+      <img src="https://images.unsplash.com/photo-1606770347238-36b23d6f8c6b" alt="Law Office">
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <p>📍 India</p>
+      <p>📞 +91 9XXXXXXXXX</p>
+      <p>📧 kanoonisahayata@gmail.com</p>
+      <p>🕒 Mon – Sat | 10:00 AM – 6:00 PM</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Kanooni Sahayata | All Rights Reserved
+  </footer>
+
+</body>
+</html>
