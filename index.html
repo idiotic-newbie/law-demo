@@ -954,3 +954,131 @@
                 <option>Legal Documentation</option>
                 <option>Other</option>
               </select>
+            </div>
+
+            <div class="form-group">
+              <label>Brief Description *</label>
+              <textarea placeholder="Briefly describe your legal matter..." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Upload Documents (Optional)</label>
+              <div class="file-upload">
+                <input type="file" multiple accept=".pdf,.doc,.docx,.jpg,.png">
+                <div class="file-upload-icon">📁</div>
+                <p>Click to upload or drag and drop<br><small>PDF, DOC, DOCX, JPG, PNG (Max 10MB each)</small></p>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%;">
+              Submit Request →
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1606770347238-36b23d6f8c6b" alt="Law Office">
+        <div class="about-badge">
+          <h4>15+</h4>
+          <p>Years of Excellence</p>
+        </div>
+      </div>
+      
+      <div class="about-content">
+        <h2>Justice Through Integrity</h2>
+        <p>Kanooni Sahayata is a trusted law firm dedicated to providing accessible, ethical, and effective legal services across India. We believe every individual deserves quality legal representation.</p>
+        <p>Our team of experienced advocates combines deep legal knowledge with practical courtroom experience to deliver results. We prioritize transparency, client communication, and personalized legal strategies.</p>
+        
+        <div class="about-values">
+          <div class="value-item">
+            <div class="value-icon">✓</div>
+            <strong>Client-First Approach - Your success is our priority</strong>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">✓</div>
+            <strong>Transparent Pricing - No hidden fees or surprises</strong>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">✓</div>
+            <strong>Regular Updates - Stay informed at every step</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-container">
+      <h2>Get in Touch</h2>
+      <p class="subtitle">We're here to help with your legal needs</p>
+      
+      <div class="contact-grid">
+        <div class="contact-item">
+          <div class="icon">📍</div>
+          <h4>Office Address</h4>
+          <p>New Delhi & Mumbai<br>India</p>
+        </div>
+        
+        <div class="contact-item">
+          <div class="icon">📞</div>
+          <h4>Phone</h4>
+          <p>+91 9XXXXXXXXX<br>Mon-Sat: 10 AM - 6 PM</p>
+        </div>
+        
+        <div class="contact-item">
+          <div class="icon">📧</div>
+          <h4>Email</h4>
+          <p>kanoonisahayata@gmail.com<br>24/7 Support</p>
+        </div>
+      </div>
+
+      <a href="#portal" class="btn-primary">Schedule Free Consultation →</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Kanooni Sahayata | All Rights Reserved | Licensed Legal Services</p>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Form submission
+    document.getElementById('consultationForm').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thank you! Your consultation request has been submitted. We will contact you within 24 hours.');
+      e.target.reset();
+    });
+
+    // File upload feedback
+    document.querySelector('.file-upload input').addEventListener('change', function(e) {
+      const files = e.target.files;
+      if(files.length > 0) {
+        const fileNames = Array.from(files).map(f => f.name).join(', ');
+        document.querySelector('.file-upload p').innerHTML = `<strong>${files.length} file(s) selected:</strong><br><small>${fileNames}</small>`;
+      }
+    });
+  </script>
+
+</body>
+</html>
